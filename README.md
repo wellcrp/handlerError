@@ -1,6 +1,6 @@
-# Interception
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+# Interception Angular 11.0
+ * Aplicando tratamentos de erro de HttpClient com HttpIntercetor
+ - Simples Projeto utilizando HttpInterceptor 
 
 ## Development server
 
