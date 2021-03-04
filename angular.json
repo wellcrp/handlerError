@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "interception"
+  "defaultProject": "interception",
+  "cli": {
+    "analytics": false
+  }
 }

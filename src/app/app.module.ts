@@ -1,8 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeModule } from './componente/home/home.module';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ErrorInterceptor } from './handler/error.interceptor';
+import { GlobalErrorHandler } from './handler/global-error.handler';
 
 @NgModule({
   declarations: [
@@ -10,9 +14,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    BrowserModule,
+    AppRoutingModule,
+    HomeModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
